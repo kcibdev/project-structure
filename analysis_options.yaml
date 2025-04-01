@@ -1,0 +1,100 @@
+# File: analysis_options.yaml
+# This file configures the static analysis results for your project.
+
+include: package:flutter_lints/flutter.yaml # Use Flutter's recommended rules as a base
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/generated_plugin_registrant.dart"
+  language:
+    strict-casts: true
+    strict-raw-types: true
+    strict-inference: true
+  errors:
+    # Treat potential errors as errors
+    invalid_assignment: error
+    missing_return: error
+    dead_code: error
+    avoid_type_to_string: error
+
+    # Treat style recommendations as warnings
+    avoid_print: warning
+    prefer_single_quotes: warning
+    cancel_subscriptions: warning
+    close_sinks: warning
+    unnecessary_statements: warning
+
+linter:
+  rules:
+    # Error prevention
+    avoid_empty_else: true
+    avoid_relative_lib_imports: true
+    avoid_types_as_parameter_names: true
+    no_duplicate_case_values: true
+    valid_regexps: true
+    exhaustive_cases: true
+
+    # Performance
+    avoid_slow_async_io: true
+    avoid_unnecessary_containers: true
+    prefer_final_in_for_each: true
+    prefer_final_locals: true
+
+    # Code style and readability
+    always_declare_return_types: true
+    annotate_overrides: true
+    avoid_function_literals_in_foreach_calls: true
+    avoid_init_to_null: true
+    avoid_null_checks_in_equality_operators: true
+    avoid_unused_constructor_parameters: true
+    avoid_void_async: true
+    await_only_futures: true
+    camel_case_types: true
+    directives_ordering: true
+    empty_catches: true
+    empty_constructor_bodies: true
+    library_names: true
+    lines_longer_than_80_chars: false
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    prefer_expression_function_bodies: true
+    prefer_final_fields: true
+    prefer_is_empty: true
+    prefer_is_not_empty: true
+    prefer_single_quotes: true
+    sort_child_properties_last: true
+    sort_pub_dependencies: true
+    unnecessary_await_in_return: true
+    unnecessary_brace_in_string_interps: true
+    unnecessary_const: true
+    unnecessary_getters_setters: true
+    unnecessary_new: true
+    unnecessary_null_aware_assignments: true
+    unnecessary_nullable_for_final_variable_declarations: true
+    unnecessary_parenthesis: true
+    unnecessary_this: true
+    use_key_in_widget_constructors: true
+
+    # Documentation
+    package_api_docs: true
+    slash_for_doc_comments: true
+
+    # Tests
+    avoid_returning_null_for_future: true
+
+    # Flutter specific
+    avoid_print: true
+    use_build_context_synchronously: true
+    use_full_hex_values_for_flutter_colors: true
+
+    # Null safety
+    avoid_dynamic_calls: true
+    null_check_on_nullable_type_parameter: true
+    prefer_null_aware_operators: true
+
+    # Organization
+    prefer_relative_imports: false
+    always_put_required_named_parameters_first: true
+    file_names: true

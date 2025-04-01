@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TEAMID.com.org.appname",
+        "paths": [
+          "/event/*",
+          "/post/*"
+        ]
+      }
+    ]
+  }
+}

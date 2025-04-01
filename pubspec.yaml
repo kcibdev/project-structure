@@ -1,0 +1,54 @@
+name: agent
+description: "Easy pay agent app"
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  cupertino_icons: ^1.0.8
+  easy_image_viewer: ^1.5.1
+  flutter:
+    sdk: flutter
+  flutter_hooks: ^0.21.2
+  flutter_svg: ^2.0.17
+  getwidget: ^4.0.0
+  go_router: ^14.8.1
+  google_fonts: ^6.2.1
+  http: ^1.3.0
+  http_parser: ^4.0.2
+  icons_plus: ^5.0.0
+  intl: ^0.20.2
+  loader_overlay: ^4.0.4+1
+  logger: ^2.5.0
+  lucide_icons_flutter: ^2.0.2
+  path: ^1.9.0
+  provider: ^6.1.4
+  shared_preferences: ^2.5.3
+  wolt_modal_sheet: ^0.11.0
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+    - assets/icons/
+  # fonts:
+  #   - family: Grotesque
+  #     fonts:
+  #       - asset: assets/fonts/DarkerGrotesque-Black.ttf
+  #       - asset: assets/fonts/DarkerGrotesque-Bold.ttf
+  #       - asset: assets/fonts/DarkerGrotesque-ExtraBold.ttf
+  #       - asset: assets/fonts/DarkerGrotesque-Light.ttf
+  #       - asset: assets/fonts/DarkerGrotesque-Regular.ttf
+  #       - asset: assets/fonts/DarkerGrotesque-SemiBold.ttf
+  #       - asset: assets/fonts/DarkerGrotesque-Medium.ttf
